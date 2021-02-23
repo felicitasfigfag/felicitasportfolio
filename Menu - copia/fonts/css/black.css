@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Decalotype-Black';
+  src: url('Decalotype-Black.eot');
+  src: url('Decalotype-Black.eot?#iefix') format('embedded-opentype'),
+       url('Decalotype-Black.svg#Decalotype-Black') format('svg'),
+       url('Decalotype-Black.ttf') format('truetype'),
+       url('Decalotype-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

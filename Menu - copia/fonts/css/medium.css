@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Decalotype-Medium';
+  src: url('Decalotype-Medium.eot');
+  src: url('Decalotype-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Decalotype-Medium.svg#Decalotype-Medium') format('svg'),
+       url('Decalotype-Medium.ttf') format('truetype'),
+       url('Decalotype-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

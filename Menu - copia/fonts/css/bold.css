@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: url('Decalotype-Bold.eot');
+  src: url('Decalotype-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Decalotype-Bold.svg#Decalotype-Bold') format('svg'),
+       url('Decalotype-Bold.ttf') format('truetype'),
+       url('Decalotype-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
