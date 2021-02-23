@@ -1,0 +1,308 @@
+body {
+  background-size: cover;
+  margin: 0;
+  overflow:hidden;
+  width: 100%;
+  height: 100%;
+}
+.fondo1{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.section-center{
+  background-size: cover;
+  margin: 0;
+  overflow:hidden;
+  width: 100%;
+  background-image: url(./imgs/fondo2.png);
+  
+}
+.background2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -20;
+}
+.teclas{
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 70%;
+}
+/* LOADING */
+.loading{
+  margin-top: -100px;
+  padding: 0;
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  z-index: 3000;
+  background-color: black;
+  animation: fade 4s linear 1 normal forwards;
+}
+@keyframes fade{
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0%;
+  }
+}
+/* CUBOS */
+.container {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  position: relative;
+  perspective: 450px;
+
+} 
+#cube {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  animation: move 4s infinite;
+  transition: ease-in-out;
+  top: 0;
+  left: 0;
+  grid-column: 1/2;
+}
+
+
+@keyframes move {
+  0% {
+    transform: rotateX(-180deg);
+    transform: rotateY(-75deg);
+    transform: translate(0, 400px);
+  }
+  25% {
+    transform: rotateX(75deg);
+    transform: rotateY(145deg);
+  }
+  50% {
+    transform: rotateY(145deg);
+    transform: rotateX(87deg);
+    transform: translate(0, 250px);
+  }
+  75% {
+    transform: rotateX(45deg);
+    transform: rotateY(80deg);
+    transform: translate(0, 100px);
+  }
+
+  100% {
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+  }
+}
+.cube figure {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  border: 0.5px solid rgba(61, 206, 25, 0.5);
+  overflow: hidden;
+}
+/* CARAS */
+.cube .back {
+  background: hsla(32, 100%, 50%, 0.5);
+  transform: rotateX(0deg) translateZ(-50px);
+  border-radius: 10%;
+}
+.cube .left {
+  background-color: hsla(337, 100%, 50%, 0.5);
+  transform: rotateY(90deg) translateZ(-50px);
+  border-radius: 10%;
+}
+.cube .bottom {
+  background-color: hsla(120, 100%, 50%, 0.5);
+  transform: rotateX(90deg) translateZ(-50px);
+  border-radius: 10%;
+}
+.cube .front {
+  background: hsla(172, 100%, 50%, 0.5);
+  transform: rotateX(0deg) translateZ(50px);
+  border-radius: 10%;
+}
+.cube .right {
+  background-color: hsla(308, 100%, 50%, 0.5);
+  transform: rotateY(90deg) translateZ(50px);
+  border-radius: 10%;
+}
+.cube .top {
+  background-color: hsla(76, 100%, 50%, 0.5);
+  transform: rotateX(90deg) translateZ(50px);
+  border-radius: 10%;
+}
+
+
+/* first page */
+.first-screen .fs-item{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.fs-item{
+  position: absolute;
+  overflow: hidden;
+}
+.title{
+  position: absolute;
+  overflow: hidden;
+}
+/* PRELOAD ANIMATIONS*/
+/* Title animation */
+.flicker-in-1 {
+	-webkit-animation: flicker-in-1 4s linear both;
+	        animation: flicker-in-1 4s linear both;
+          animation-delay: 3s;
+}
+
+@keyframes flicker-in-1 {
+  0%{
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+    transform:skewX(10deg)
+  }
+  10.1% {
+    opacity: 0.80;
+    transform:skewX(0deg)
+  }
+  10.2% {
+    opacity: 0.5;
+    
+  }
+  20% {
+    opacity: 0;
+  }
+  20.1% {
+    opacity: 1;
+    transform:skewX(5deg)
+  }
+  20.6% {
+    opacity: 0.2;
+    transform:skewX(0deg)
+  }
+  30% {
+    opacity: 0.6;
+  }
+  30.1% {
+    opacity: 1;
+  }
+  30.5% {
+    opacity: 0.89;
+    transform:skewX(80deg)
+  }
+  30.6% {
+    opacity: 0;
+    transform:skewX(0deg)
+  }
+  45% {
+    opacity: 0.2;
+    
+  }
+  45.1% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.3;
+    transform:skewX(-7deg)
+  }
+  51%{
+    transform:skewX(0deg)
+  }
+  55% {
+    opacity: 1;
+  }
+  55.1% {
+    opacity: 0;
+  }
+  57% {
+    opacity: 0;
+  }
+  57.1% {
+    opacity: 0.6;
+  }
+  60% {
+    opacity: 1;
+  }
+  60.1% {
+    opacity: 0.4;
+  }
+  65% {
+    opacity: 0.8;
+  }
+  65.1% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  75.1% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 0.4;
+  }
+  77.1% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 1;
+  }
+  85.1% {
+    opacity: 0;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* press enter animation */
+.fade-in {
+	-webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 6s both;
+	        animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 6s both;
+}
+ @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* TOGGLE */
+.hide{
+  visibility: hidden;
+  z-index: -200;
+}
+
+
+
